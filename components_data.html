@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <div id="app">
+
+    <posts :data="34"></posts>
+
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+
+  Vue.component('posts', {
+
+    props: ['data'],
+
+    template:
+    `
+    <h1 @click="display">From Inline template hello, {{message}}, Data: {{data}} </h1>
+
+    `,
+
+    data() {
+      return {
+        message: 'Hello Cjcrew'
+      }
+    },
+
+    methods: {
+      display() {
+        console.log('hello from method');
+      }
+    }
+
+  });
+
+  let vm = new Vue({
+    el: "#app"
+  });
+
+</script>
