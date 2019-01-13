@@ -37,6 +37,7 @@
       </form>
     </div>
   </nav>
+    <h1 class="ml-5">Local Data:</h1>
     <PostsExample/>
     <h1 class="ml-5">Data from API:</h1>
     <DynamicPosts/>
