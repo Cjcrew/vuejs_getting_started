@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h1 class="mt-4">Data from API:</h1>
     <table class="table mt-4">
       <thead>
         <tr>
