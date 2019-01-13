@@ -1,13 +1,21 @@
 import Vue from 'vue'
 import App from './App'
 import VueRouter from "vue-router"
+import DynamicPosts from './components/DynamicPosts'
+import Contact from './components/Contact'
 import Posts from './components/Posts'
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/', component: Posts
+    path: '/', component: DynamicPosts
+  },
+  {
+    path: '/contact', component: Contact
+  },
+  {
+    path: '/local_data', component: Posts
   }
 ]
 
