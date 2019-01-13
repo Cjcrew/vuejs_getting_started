@@ -38,18 +38,22 @@
     </div>
   </nav>
     <PostsExample/>
+    <h1 class="ml-5">Data from API:</h1>
+    <DynamicPosts/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-import PostsExample from './components/Posts'
+import HelloWorld from './components/HelloWorld';
+import PostsExample from './components/Posts';
+import DynamicPosts from './components/DynamicPosts';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    PostsExample
+    PostsExample,
+    DynamicPosts
   }
 }
 </script>
